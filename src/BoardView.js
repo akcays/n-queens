@@ -15,7 +15,9 @@
       var model = this.model;
 
       return this.$el.html(_(_.range(model.get('n'))).map(function(rowIndex) {
+        // console.log('row', rowIndex);
         return $('<tr class="row"/>').html(_(_.range(model.get('n'))).map(function(colIndex) {
+          // console.log('col', colIndex);
           var $square = $('<td class="square"/>').on('click', function(e) {
             model.togglePiece(rowIndex, colIndex);
           }).addClass(['positive', 'negative'][(rowIndex + colIndex) % 2]);
