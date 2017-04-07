@@ -80,7 +80,10 @@
     //
     // test if a specific row on this board contains a conflict
     hasRowConflictAt: function(rowIndex) {
+      // console.log('this.rows', this.rows());
+      // console.log('rowIndex', rowIndex);
       var currentRow = this.get(rowIndex);
+      // console.log('currRow: ', currentRow);
       var rowHasQueen = false;
       for (var square of currentRow) {
 
