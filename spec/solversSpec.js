@@ -44,14 +44,13 @@ describe('solvers', function() {
             return memo + col;
           }, 0);
         }, 0);
-        // console.log(n);
 
         expect(solutionBoard.get('n')).to.equal(n);
-        // console.log(n);
+        console.log('1');
         expect(numPieces).to.equal(n);
-        // console.log(n);
+        console.log('2');
         expect(solutionBoard.hasAnyQueensConflicts()).to.be.equal(false);
-        // console.log(n);
+        console.log('3');
       });
 
       // Check 2 and 3 for no solution
